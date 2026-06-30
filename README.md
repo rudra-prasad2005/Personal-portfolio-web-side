@@ -111,9 +111,9 @@ This is a personal portfolio, but suggestions and feedback are always welcome. F
 ## 📬 Contact
 
 - 📧 **Email:** rudrapradhan2005@gmail.com
-- 💼 **LinkedIn:** [rudra-4b284a295](https://www.linkedin.com/in)
-- 🐙 **GitHub:** [@rudra-prasad2005](https://github.com)
-- 📷 **Instagram:** [@rudra809369](https://www.instagram.com)
+- 💼 **LinkedIn:** [(https://www.linkedin.com/in)
+- 🐙 **GitHub:** [(https://github.com)
+- 📷 **Instagram:** [(https://www.instagram.com)
 
 ## 📄 License
 
