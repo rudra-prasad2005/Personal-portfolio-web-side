@@ -1,24 +1,6 @@
-# <img src="profile.jpg" width="40" align="center" /> Rudra Prasad Pradhan — Portfolio
+# Rudra Prasad Pradhan — Portfolio
 
 A personal portfolio website showcasing my work as a **Frontend Developer & Programmer**. Built with vanilla HTML, CSS, and JavaScript — no frameworks, no build step, no dependencies.
-
-<p align="center">
-  <a href="https://github.com/rudra-prasad2005"><img src="https://img.shields.io/badge/GitHub-rudra--prasad2005-181717?logo=github&logoColor=white" alt="GitHub"></a>
-  <a href="https://www.linkedin.com/in/rudra-4b284a295/"><img src="https://img.shields.io/badge/LinkedIn-Rudra%20Prasad%20Pradhan-0A66C2?logo=linkedin&logoColor=white" alt="LinkedIn"></a>
-  <a href="mailto:rudrapradhan2005@gmail.com"><img src="https://img.shields.io/badge/Email-rudrapradhan2005@gmail.com-EA4335?logo=gmail&logoColor=white" alt="Email"></a>
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white" alt="HTML5">
-  <img src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white" alt="CSS3">
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black" alt="JavaScript">
-  <img src="https://img.shields.io/badge/Responsive-yes-brightgreen" alt="Responsive">
-  <img src="https://img.shields.io/badge/Dependencies-zero-brightgreen" alt="No dependencies">
-  <img src="https://img.shields.io/badge/License-MIT-blue" alt="License">
-</p>
-
----
-
 ## 📑 Table of Contents
 
 - [About](#-about)
@@ -129,9 +111,9 @@ This is a personal portfolio, but suggestions and feedback are always welcome. F
 ## 📬 Contact
 
 - 📧 **Email:** rudrapradhan2005@gmail.com
-- 💼 **LinkedIn:** [rudra-4b284a295](https://www.linkedin.com/in/rudra-4b284a295/)
-- 🐙 **GitHub:** [@rudra-prasad2005](https://github.com/rudra-prasad2005)
-- 📷 **Instagram:** [@rudra809369](https://www.instagram.com/rudra809369/)
+- 💼 **LinkedIn:** [rudra-4b284a295](https://www.linkedin.com/in)
+- 🐙 **GitHub:** [@rudra-prasad2005](https://github.com)
+- 📷 **Instagram:** [@rudra809369](https://www.instagram.com)
 
 ## 📄 License
 
