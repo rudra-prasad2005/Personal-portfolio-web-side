@@ -110,7 +110,7 @@ This is a personal portfolio, but suggestions and feedback are always welcome. F
 
 ## 📬 Contact
 
-- 📧 **Email:** rudrapradhan2005@gmail.com
+- 📧 **Email:** abcf123@gmail.com
 - 💼 **LinkedIn:** [(https://www.linkedin.com/in)
 - 🐙 **GitHub:** [(https://github.com)
 - 📷 **Instagram:** [(https://www.instagram.com)
