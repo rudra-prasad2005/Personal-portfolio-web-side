@@ -1,6 +1,24 @@
-# Rudra Prasad Pradhan — Portfolio
+# <img src="profile.jpg" width="40" align="center" /> Rudra Prasad Pradhan — Portfolio
 
-A personal portfolio website showcasing my work as a **Frontend Developer & Programmer**. Built with vanilla HTML, CSS, and JavaScript — no frameworks, no build step, no dependencies.
+A personal portfolio website styled as a vintage broadsheet — **"The Developer Dispatch"** — with a detective-vibe twist. Showcasing my work as a **Frontend Developer & Programmer**. Built with vanilla HTML, CSS, and JavaScript — no frameworks, no build step, no dependencies.
+
+<p align="center">
+  <a href="https://github.com/rudra-prasad2005"><img src="https://img.shields.io/badge/GitHub-rudra--prasad2005-181717?logo=github&logoColor=white" alt="GitHub"></a>
+  <a href="https://www.linkedin.com/in/rudra-4b284a295/"><img src="https://img.shields.io/badge/LinkedIn-Rudra%20Prasad%20Pradhan-0A66C2?logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <a href="mailto:rudrapradhan2005@gmail.com"><img src="https://img.shields.io/badge/Email-rudrapradhan2005@gmail.com-EA4335?logo=gmail&logoColor=white" alt="Email"></a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white" alt="HTML5">
+  <img src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white" alt="CSS3">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black" alt="JavaScript">
+  <img src="https://img.shields.io/badge/Responsive-yes-brightgreen" alt="Responsive">
+  <img src="https://img.shields.io/badge/Dependencies-zero-brightgreen" alt="No dependencies">
+  <img src="https://img.shields.io/badge/License-MIT-blue" alt="License">
+</p>
+
+---
+
 ## 📑 Table of Contents
 
 - [About](#-about)
@@ -31,25 +49,25 @@ This repository hosts my personal portfolio — a single-page site that doubles 
 
 ## ✨ Features
 
-- 🎨 **Glassmorphism UI** — translucent cards with backdrop blur over an animated gradient background
-- 🌌 **Animated background** — gradient color shift + 3 floating colored orbs
-- ⌨️ **Typewriter effect** in the hero — tagline cycles through roles in real time
+- 📰 **Newspaper / detective-vibe UI** — aged-newsprint palette, Playfair & IM Fell English type, double-rule dividers, multi-column article flow
+- 🗞️ **Front-page masthead** with date, weather, and a red "EXTRA" flag
+- 🕵️ **Case-file projects**, "WANTED" sidebar card with rotated suspect sketch, classified ad, and pulled-quote blockquote
+- 📰 **Drop caps**, italic bylines, "Continued on Page 2" markers, and typewriter-style kickers
 - 🎯 **Scroll-reveal animations** powered by the `IntersectionObserver` API
-- 📱 **Fully responsive** — looks great on mobile, tablet, and desktop
-- 🍔 **Animated mobile nav** with a hamburger toggle
+- 📱 **Fully responsive** — broadsheet on desktop, single-column on mobile
 - 📬 **Contact form** with [Web3Forms](https://web3forms.com/) and toast notifications
 - 🌀 **Smooth scrolling** between sections
 - ⚡ **Zero dependencies** — pure HTML, CSS, and vanilla JavaScript
 
 ## 🛠️ Tech Stack
 
-| Layer    | Technology                       |
-| -------- | -------------------------------- |
-| Markup   | HTML5 (semantic)                 |
-| Styling  | CSS3 (Grid, Flexbox, animations) |
-| Behavior | Vanilla JavaScript (ES6+)        |
-| Forms    | Web3Forms API                    |
-| Fonts    | System UI / Segoe UI stack       |
+| Layer    | Technology                                  |
+| -------- | ------------------------------------------- |
+| Markup   | HTML5 (semantic)                            |
+| Styling  | CSS3 (Grid, Flexbox, multi-column layout)   |
+| Behavior | Vanilla JavaScript (ES6+)                   |
+| Forms    | Web3Forms API                               |
+| Fonts    | Playfair Display · IM Fell English · Special Elite |
 
 ## 📁 Project Structure
 
@@ -110,10 +128,10 @@ This is a personal portfolio, but suggestions and feedback are always welcome. F
 
 ## 📬 Contact
 
-- 📧 **Email:** abcf123@gmail.com
-- 💼 **LinkedIn:** [(https://www.linkedin.com/in)
-- 🐙 **GitHub:** [(https://github.com)
-- 📷 **Instagram:** [(https://www.instagram.com)
+- 📧 **Email:** rudrapradhan2005@gmail.com
+- 💼 **LinkedIn:** [rudra-4b284a295](https://www.linkedin.com/in/rudra-4b284a295/)
+- 🐙 **GitHub:** [@rudra-prasad2005](https://github.com/rudra-prasad2005)
+- 📷 **Instagram:** [@rudra809369](https://www.instagram.com/rudra809369/)
 
 ## 📄 License
 
