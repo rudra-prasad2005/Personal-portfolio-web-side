@@ -1,19 +1,17 @@
-// Mobile menu toggle
-const toggle = document.getElementById('menu-toggle');
-const navMenu = document.getElementById('nav-menu');
+// ------------------------------------------
+// The Developer Dispatch — interactivity
+// ------------------------------------------
 
-toggle.addEventListener('click', () => {
-  toggle.classList.toggle('open');
-  navMenu.classList.toggle('open');
-});
-
-// Close menu when a link is tapped
-navMenu.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => {
-    toggle.classList.remove('open');
-    navMenu.classList.remove('open');
+// Dynamic date in the top bar
+(function setDate() {
+  const el = document.getElementById('today-date');
+  if (!el) return;
+  const fmt = new Intl.DateTimeFormat('en-US', {
+    weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'
   });
-});
+  const formatted = fmt.format(new Date()).toUpperCase();
+  el.textContent = formatted;
+})();
 
 // Scroll-reveal animations
 const revealEls = document.querySelectorAll('.reveal');
@@ -25,7 +23,6 @@ const observer = new IntersectionObserver((entries) => {
     }
   });
 }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-
 revealEls.forEach(el => observer.observe(el));
 
 // Contact form (Web3Forms)
@@ -36,76 +33,54 @@ let toastTimer = null;
 
 function showToast(message, isError = false) {
   toast.textContent = message;
-  toast.style.background = isError
-    ? 'rgba(220, 60, 80, 0.95)'
-    : 'rgba(122, 92, 255, 0.95)';
+  toast.style.background = isError ? '#8a0e16' : '#14110d';
+  toast.style.borderColor = isError ? '#f3ecd8' : '#b8121c';
   toast.classList.add('show');
   clearTimeout(toastTimer);
-  toastTimer = setTimeout(() => toast.classList.remove('show'), 4000);
+  toastTimer = setTimeout(() => toast.classList.remove('show'), 4500);
 }
 
-form.addEventListener('submit', async (e) => {
-  e.preventDefault();
-  const originalText = submitBtn.textContent;
-  submitBtn.disabled = true;
-  submitBtn.textContent = 'Sending...';
+if (form) {
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const originalText = submitBtn.textContent;
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'FILING...';
 
-  try {
-    const formData = new FormData(form);
-    const response = await fetch('https://api.web3forms.com/submit', {
-      method: 'POST',
-      body: formData
-    });
-    const result = await response.json();
+    try {
+      const formData = new FormData(form);
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formData
+      });
+      const result = await response.json();
 
-    if (response.ok && result.success) {
-      const name = (formData.get('name') || '').toString().trim();
-      showToast(`Thanks${name ? ', ' + name : ''}! Your message has been sent.`);
-      form.reset();
-    } else {
-      showToast(result.message || 'Something went wrong. Please try again.', true);
+      if (response.ok && result.success) {
+        const name = (formData.get('name') || '').toString().trim();
+        showToast(`Thanks${name ? ', ' + name : ''}! Your telegram has been received.`);
+        form.reset();
+      } else {
+        showToast(result.message || 'Something went wrong. Try again.', true);
+      }
+    } catch (err) {
+      showToast('Network error. Check your connection and try again.', true);
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.textContent = originalText;
     }
-  } catch (err) {
-    showToast('Network error. Please check your connection and try again.', true);
-  } finally {
-    submitBtn.disabled = false;
-    submitBtn.textContent = originalText;
-  }
-});
-
-// Typewriter effect for the hero tagline
-const typedEl = document.getElementById('typed-text');
-const words = ['Frontend Developer', 'Programmer', 'Web Designer', 'Problem Solver'];
-let wordIndex = 0;
-let charIndex = 0;
-let isDeleting = false;
-
-function typeEffect() {
-  if (!typedEl) return;
-  const currentWord = words[wordIndex];
-
-  if (isDeleting) {
-    typedEl.textContent = currentWord.substring(0, charIndex - 1);
-    charIndex--;
-  } else {
-    typedEl.textContent = currentWord.substring(0, charIndex + 1);
-    charIndex++;
-  }
-
-  let typeSpeed = isDeleting ? 50 : 100;
-
-  if (!isDeleting && charIndex === currentWord.length) {
-    typeSpeed = 1500;
-    isDeleting = true;
-  } else if (isDeleting && charIndex === 0) {
-    isDeleting = false;
-    wordIndex = (wordIndex + 1) % words.length;
-    typeSpeed = 500;
-  }
-
-  setTimeout(typeEffect, typeSpeed);
+  });
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  setTimeout(typeEffect, 500);
+// Smooth scroll for in-page links (already enabled via CSS, but
+// this gives a small offset so the section doesn't sit under the masthead)
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener('click', (e) => {
+    const id = link.getAttribute('href');
+    if (id.length < 2) return;
+    const target = document.querySelector(id);
+    if (!target) return;
+    e.preventDefault();
+    const top = target.getBoundingClientRect().top + window.scrollY - 20;
+    window.scrollTo({ top, behavior: 'smooth' });
+  });
 });
