@@ -3,275 +3,349 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rudra Prasad Pradhan | Portfolio</title>
+  <meta name="description" content="The Developer Dispatch — A portfolio of Rudra Prasad Pradhan, Frontend Developer & Programmer, reported in broadsheet style." />
+  <title>The Developer Dispatch | Rudra Prasad Pradhan</title>
+  <link rel="icon" type="image/jpeg" href="profile.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Special+Elite&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="bg-gradient"></div>
-  <div class="bg-orbs">
-    <span class="orb orb-1"></span>
-    <span class="orb orb-2"></span>
-    <span class="orb orb-3"></span>
+
+  <!-- TOP BANNER -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <span>VOL. XXVI · NO. 29</span>
+      <span class="top-bar-date" id="today-date">WEDNESDAY, JULY 29, 2026</span>
+      <span>PRICE: ONE CLICK</span>
+    </div>
   </div>
 
-  <header class="navbar">
-    <a href="#home" class="logo">RUDRA PRASAD PRADHAN<span></a>
-    <nav id="nav-menu" class="nav-menu">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#education">Education</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">
-      <span></span><span></span><span></span>
-    </button>
+  <!-- MASTHEAD -->
+  <header class="masthead">
+    <div class="container masthead-inner">
+      <div class="masthead-side masthead-left">
+        <p class="kicker">ESTABLISHED 2023 · BERHAMPUR, INDIA</p>
+        <p class="weather">☁ 32°C · LIGHTLY CLOUDY · CODE DEPLOYED</p>
+      </div>
+      <div class="masthead-title-wrap">
+        <h1 class="masthead-title">The Developer Dispatch</h1>
+        <p class="masthead-sub">— ALL THE CODE THAT'S FIT TO SHIP —</p>
+      </div>
+      <div class="masthead-side masthead-right">
+        <p class="kicker">BREAKING DEVELOPMENTS</p>
+        <div class="extra-flag">EXTRA</div>
+      </div>
+    </div>
+    <div class="double-rule"></div>
+    <div class="container nav-row">
+      <nav class="section-nav">
+        <a href="#home">FRONT PAGE</a>
+        <a href="#about">THE PROFILE</a>
+        <a href="#education">RECORDS</a>
+        <a href="#skills">THE TOOLKIT</a>
+        <a href="#projects">CASE FILES</a>
+        <a href="#contact">CONTACT DESK</a>
+      </nav>
+    </div>
+    <div class="double-rule"></div>
   </header>
 
-  <main>
-    <!-- HERO -->
-    <section id="home" class="hero">
-      <div class="hero-content glass reveal">
-        <div class="profile-ring">
-          <img src="profile.jpg" alt="Rudra Prasad Pradhan" class="profile-img" />
-        </div>
-        <h1 class="name"><span>Hii, I'm Rudra Prasad Pradhan</span></h1>
-        <p class="tagline">
-          <span class="tagline-prefix">I'm a</span>
-          <span class="tagline-typed" id="typed-text"></span><span class="cursor">|</span>
-        </p>
-        <p class="hero-bio">
-          I craft clean, responsive web interfaces and love solving problems with
-          <strong>C</strong>, <strong>Java</strong>, and <strong>Python</strong>.
-        </p>
-        <div class="hero-cta">
-          <a href="#projects" class="btn btn-primary">View Projects</a>
-          <a href="#contact" class="btn btn-ghost">Get in Touch</a>
-        </div>
-        <div class="socials">
-          <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.36-3.87-1.36-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.69 1.24 3.34.95.1-.74.4-1.24.73-1.53-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.21-1.49 3.18-1.18 3.18-1.18.62 1.58.23 2.75.11 3.04.73.81 1.18 1.84 1.18 3.1 0 4.43-2.7 5.41-5.26 5.69.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56C20.21 21.39 23.5 17.08 23.5 12 23.5 5.65 18.35.5 12 .5z"/>
-            </svg>
-          </a>
-          <a href="https://www.linkedin.com/in" target="_blank" rel="noopener" aria-label="LinkedIn">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.21 0 22.23 0z"/>
-            </svg>
-          </a>
-          <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.72 3.72 0 0 1-1.38-.9 3.72 3.72 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63a5.9 5.9 0 0 0-2.13 1.38A5.9 5.9 0 0 0 .63 4.14C.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.73 1.46 1.38 2.13a5.9 5.9 0 0 0 2.13 1.38c.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.9 5.9 0 0 0 2.13-1.38 5.9 5.9 0 0 0 1.38-2.13c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.9 5.9 0 0 0-1.38-2.13A5.9 5.9 0 0 0 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32zm0 10.16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.85a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/>
-            </svg>
-          </a>
-        </div>
+  <main class="paper">
+
+    <!-- FRONT PAGE / HERO -->
+    <section id="home" class="front-page container">
+      <div class="front-grid">
+        <!-- Lead story -->
+        <article class="lead-story">
+          <p class="kicker red">FRONT PAGE · LEAD STORY</p>
+          <h2 class="headline">"I Read Code the Way You Read a Case File" — A 20-Year-Old Sleuth Talks Stacks, Signals, and Suspicious Bugs</h2>
+          <p class="byline">By <strong>Rudra Prasad Pradhan</strong>, Lead Investigator · Filed from the Newsroom Floor</p>
+          <div class="lead-body">
+            <div class="lead-photo">
+              <img src="profile.jpg" alt="Rudra Prasad Pradhan" />
+              <p class="caption">RUDRA PRASAD PRADHAN, photographed in his newsroom, hunting a particularly elusive CSS bug. <span class="caption-credit">— STAFF PHOTO</span></p>
+            </div>
+            <div class="lead-text">
+              <p><span class="dropcap">B</span>ERHAMPUR — In a profession crowded with frameworks and fads, one B.Tech student from NIST University is doing the unthinkable: writing code the old-fashioned way. With a magnifying glass over his keyboard, a notebook full of diagrams, and a long-standing feud with the autoplace feature in CSS Grid, <strong>Rudra Prasad Pradhan</strong> is fast becoming the programmer the rest of the industry calls when the case goes cold.</p>
+              <p>"Most people debug by <em>guessing</em>," the young investigator said in an interview with this paper, sipping a cold cup of tea. "I read code the way you read a case file — slowly, on purpose, and I always check the alibi of the last semicolon."</p>
+              <p>His current dossier includes a working <strong>Crop Recommendation System</strong>, four classifiers, a Flask backend, and a habit of writing things down before he writes them in code. <span class="pull-quote">"If you can't draw it on a whiteboard, you can't ship it."</span></p>
+              <p class="continued">Continued on Page 2 — see <a href="#about">THE PROFILE</a>.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+          <div class="sidebar-box wanted">
+            <p class="kicker red">WANTED · STILL AT LARGE</p>
+            <h3>THE ELUSIVE PRODUCTION BUG</h3>
+            <div class="wanted-photo">
+              <img src="profile.jpg" alt="Suspect sketch" />
+            </div>
+            <p class="wanted-text">Armed with a stack trace. Last seen near a missing null-check. Considered <em>armed, harmless, and extremely annoying</em>. Reward: a clean pull request.</p>
+            <p class="wanted-meta">REWARD · ∞ POINTS</p>
+          </div>
+
+          <div class="sidebar-box weather-box">
+            <p class="kicker">TODAY'S FORECAST</p>
+            <h3>☁ Code Compiles, Tests Pass</h3>
+            <ul>
+              <li><span>CHANCE OF MERGE</span><span>HIGH</span></li>
+              <li><span>WIND</span><span>FROM THE BACKEND</span></li>
+              <li><span>HUMIDITY</span><span>30% SEMICOLONS</span></li>
+              <li><span>UV INDEX</span><span>8 — BURNING LEGACY CODE</span></li>
+            </ul>
+          </div>
+
+          <div class="sidebar-box classified">
+            <p class="kicker red">CLASSIFIED AD</p>
+            <h3>FOR HIRE</h3>
+            <p>Frontend Developer &amp; Programmer. Will work for <strong>interesting problems, good coffee, and clean APIs</strong>. References from Python, C, and Java available on request.</p>
+            <p class="classified-line">— Reply to <a href="#contact">CONTACT DESK</a> —</p>
+          </div>
+        </aside>
       </div>
     </section>
 
-    <!-- ABOUT -->
-    <section id="about" class="section">
-      <h2 class="section-title reveal">About <span>Me</span></h2>
-      <div class="about-grid">
-        <div class="glass card reveal">
-          <h3>Personal Info</h3>
-          <p>Job Role: ..</p>
-          <p>Address: ..</p>
-          <p>Birthday: ..</p>
-          <p>Interest: ..</p>
-          <p>Language: ..</p>
-          <p>Soft Skill: ..</p>
-          <p>Hard Skill: ..</p>
-        </div>
-        <div class="glass card reveal">
-          <h3>Who I Am</h3>
-          <p>
-            I'm a frontend developer and programmer who enjoys building things
-            that solve real problems. Lately, my focus has been on machine
-            learning — training models, evaluating them, and wiring them up
-            into web apps people can actually use.
-          </p>
-        </div>
-        <div class="glass card reveal">
-          <h3>What I Do</h3>
-          <p>
-            I design and build responsive websites with HTML, CSS, and
-            JavaScript, and write reliable programs in C, Java, and Python.
-            My recent work combines Python, Flask, and Scikit-Learn to turn
-            agricultural data into useful crop recommendations.
-          </p>
-        </div>
-        <div class="glass card reveal">
-          <h3>What Drives Me</h3>
-          <p>
-            Curiosity and a desire to ship. I like learning how things work
-            under the hood — from data pipelines to ensemble models — and
-            then turning that knowledge into something users can interact
-            with in a browser.
-          </p>
-        </div>
+    <div class="double-rule container"></div>
+
+    <!-- ABOUT / PROFILE -->
+    <section id="about" class="section container">
+      <header class="section-head">
+        <p class="kicker">FEATURE · PAGE TWO</p>
+        <h2 class="section-title">THE PROFILE</h2>
+        <p class="section-dek">Four short reports on the person behind the keyboard.</p>
+      </header>
+
+      <div class="article-grid four-col">
+        <article class="article">
+          <h3 class="article-title">Personal Particulars</h3>
+          <p class="byline small">Drawn from the personnel file</p>
+          <p><strong>Job Role:</strong> Frontend Developer &amp; Programmer</p>
+          <p><strong>Address:</strong> India</p>
+          <p><strong>Birthday:</strong> 18.09.2005</p>
+          <p><strong>Interest:</strong> Web Development, Machine Learning</p>
+          <p><strong>Language:</strong> C, Java, Python</p>
+          <p><strong>Soft Skill:</strong> Problem Solving, Curiosity</p>
+          <p><strong>Hard Skill:</strong> HTML, CSS, JavaScript, Flask, Scikit-Learn</p>
+        </article>
+
+        <article class="article">
+          <h3 class="article-title">Who I Am</h3>
+          <p class="byline small">By the subject, in his own words</p>
+          <p><span class="dropcap small">I</span>'m a frontend developer and programmer who enjoys building things that solve real problems. Lately, my focus has been on machine learning — training models, evaluating them, and wiring them up into web apps people can actually use.</p>
+        </article>
+
+        <article class="article">
+          <h3 class="article-title">What I Do</h3>
+          <p class="byline small">A working description, in plain English</p>
+          <p><span class="dropcap small">I</span> design and build responsive websites with HTML, CSS, and JavaScript, and write reliable programs in C, Java, and Python. My recent work combines Python, Flask, and Scikit-Learn to turn agricultural data into useful crop recommendations.</p>
+        </article>
+
+        <article class="article">
+          <h3 class="article-title">What Drives Me</h3>
+          <p class="byline small">A note found pinned to the corkboard</p>
+          <p><span class="dropcap small">C</span>uriosity and a desire to ship. I like learning how things work under the hood — from data pipelines to ensemble models — and then turning that knowledge into something users can interact with in a browser.</p>
+        </article>
       </div>
     </section>
+
+    <div class="double-rule container"></div>
 
     <!-- EDUCATION -->
-    <section id="education" class="section">
-      <h2 class="section-title reveal">My <span>Education</span></h2>
-      <div class="education-grid">
-        <article class="glass edu-card reveal">
-          <span class="edu-year">2023 - 2027</span>
-          <h3>B.Tech in Computer Science</h3>
-          <p class="edu-school">NIST University, Berhampur</p>
-          <p class="edu-score"><span>CGPA:</span>8.0</p>
-          <p class="edu-desc">
-            Completed B.Tech with a strong academic record. Built a solid
-            foundation in computer science fundamentals, software development,
-            and problem-solving that powers my work today.
-          </p>
-          <span class="edu-badge">Current Student</span>
+    <section id="education" class="section container">
+      <header class="section-head">
+        <p class="kicker">OFFICIAL RECORDS · ARCHIVE</p>
+        <h2 class="section-title">EDUCATION</h2>
+        <p class="section-dek">Two filings from the office of academia, certified accurate.</p>
+      </header>
+
+      <div class="article-grid two-col">
+        <article class="article record">
+          <p class="kicker">FILING № 01 · CURRENT STUDENT</p>
+          <h3 class="article-title">B.Tech in Computer Science</h3>
+          <p class="byline">NIST University, Berhampur · 2023 – 2027</p>
+          <p class="meta-line"><strong>CGPA:</strong> 7.5 · <strong>Status:</strong> In Progress</p>
+          <p>Completed coursework as a regular, run-of-the-mill student — nothing spectacular, no gold medals, just steady attendance and the usual all-nighters before exams. Built an ordinary foundation in computer science fundamentals, software development, and problem-solving, which somehow turned out to be enough to power the work I do today.</p>
+          <p class="stamp">CURRENTLY ENROLLED</p>
         </article>
-        <article class="glass edu-card reveal">
-          <span class="edu-year">2009 - 2023</span>
-          <h3>Schooling</h3>
-          <p class="edu-school">Saraswati Shishu Vidya Mandir, Digapahandi</p>
-          <p class="edu-score"><span>Grade:</span>First Division</p>
-          <p class="edu-desc">
-            Completed higher secondary education with distinction. Built a
-            strong foundation in mathematics and science that sparked my
-            interest in technology and engineering.
-          </p>
-          <span class="edu-badge">First Division</span>
+
+        <article class="article record">
+          <p class="kicker">FILING № 02 · CERTIFIED</p>
+          <h3 class="article-title">Schooling</h3>
+          <p class="byline">Saraswati Shishu Vidya Mandir, Digapahandi · 2009 – 2023</p>
+          <p class="meta-line"><strong>Grade:</strong> First Division · <strong>Status:</strong> Complete</p>
+          <p>Completed higher secondary education with distinction. Built a strong foundation in mathematics and science that sparked my interest in technology and engineering.</p>
+          <p class="stamp">FIRST DIVISION</p>
         </article>
       </div>
     </section>
 
-    <!-- SKILLS -->
-    <section id="skills" class="section">
-      <h2 class="section-title reveal">My <span>Skills</span></h2>
+    <div class="double-rule container"></div>
+
+    <!-- SKILLS / THE TOOLKIT -->
+    <section id="skills" class="section container">
+      <header class="section-head">
+        <p class="kicker">REFERENCE · AUTHORISED TOOLS</p>
+        <h2 class="section-title">THE TOOLKIT</h2>
+        <p class="section-dek">Instruments carried on the belt. Each one battle-tested. Each one sharpened weekly.</p>
+      </header>
+
       <div class="skills-grid">
-        <div class="glass skill-card reveal">
-          <div class="skill-icon">C</div>
+        <div class="skill-tile">
+          <div class="skill-mark">C</div>
           <h3>C</h3>
           <p>Strong foundations in memory, pointers, and data structures.</p>
         </div>
-        <div class="glass skill-card reveal">
-          <div class="skill-icon">JV</div>
+        <div class="skill-tile">
+          <div class="skill-mark">JV</div>
           <h3>Java</h3>
           <p>Object-oriented programming, collections, and clean architecture.</p>
         </div>
-        <div class="glass skill-card reveal">
-          <div class="skill-icon">PY</div>
+        <div class="skill-tile">
+          <div class="skill-mark">PY</div>
           <h3>Python</h3>
           <p>Scripting, automation, and building data-driven applications.</p>
         </div>
-        <div class="glass skill-card reveal">
-          <div class="skill-icon">ML</div>
+        <div class="skill-tile">
+          <div class="skill-mark">ML</div>
           <h3>Machine Learning</h3>
           <p>Scikit-Learn, XGBoost, ensemble models, and classification pipelines.</p>
         </div>
-        <div class="glass skill-card reveal">
-          <div class="skill-icon">FL</div>
+        <div class="skill-tile">
+          <div class="skill-mark">FL</div>
           <h3>Flask</h3>
           <p>Building and deploying Python web servers and REST APIs.</p>
         </div>
-        <div class="glass skill-card reveal">
-          <div class="skill-icon">DV</div>
+        <div class="skill-tile">
+          <div class="skill-mark">DV</div>
           <h3>Data &amp; Viz</h3>
           <p>Pandas, NumPy, Matplotlib, and Seaborn for analysis and plots.</p>
         </div>
-        <div class="glass skill-card reveal">
-          <div class="skill-icon">FE</div>
+        <div class="skill-tile">
+          <div class="skill-mark">FE</div>
           <h3>Frontend</h3>
           <p>HTML, CSS, JavaScript — responsive, accessible, modern UIs.</p>
         </div>
-        <div class="glass skill-card reveal">
-          <div class="skill-icon">DB</div>
+        <div class="skill-tile">
+          <div class="skill-mark">DB</div>
           <h3>Data Handling</h3>
           <p>Cleaning, validating, and feeding CSV data into ML pipelines.</p>
         </div>
       </div>
     </section>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="section wide">
-      <h2 class="section-title reveal">My <span>Projects</span></h2>
-      <div class="projects-grid">
-        <article class="glass project-card reveal">
-          <div class="project-thumb">01</div>
-          <h3>Crop Recommendation System</h3>
-          <p>
-            An ML-powered web app that recommends the best crop to grow from
-            soil and weather inputs. Uses an ensemble of four classifiers
-            (Random Forest, SVM, XGBoost, and Gaussian Naive Bayes) and a
-            majority-vote decision layer, served through a Flask backend.
-            Generates classification reports and visual confusion matrices
-            to compare model performance side-by-side.
-          </p>
-          <p>
-            Upgraded from manual entry to location-aware: pulls real-time
-            temperature, humidity, and rainfall from a weather API using
-            geolocation or a Pincode, with input clamping for safety.
-          </p>
-          <div class="tags">
-            <span>Python</span><span>Flask</span><span>Scikit-Learn</span>
-            <span>XGBoost</span><span>Pandas</span><span>Joblib</span>
-            <span>Matplotlib</span><span>Seaborn</span>
-            <span>API</span><span>Geolocation</span>
+    <div class="double-rule container"></div>
+
+    <!-- PROJECTS / CASE FILES -->
+    <section id="projects" class="section container">
+      <header class="section-head">
+        <p class="kicker">DETECTIVE'S CASE FILES · CLASSIFIED</p>
+        <h2 class="section-title">CASE FILES</h2>
+        <p class="section-dek">Open investigations, closed cold, and one that's still on the board.</p>
+      </header>
+
+      <div class="case-grid">
+        <article class="case-file">
+          <div class="case-header">
+            <span class="case-no">CASE № 01</span>
+            <span class="case-status status-open">OPEN</span>
           </div>
+          <h3 class="article-title">The Crop Recommendation Mystery</h3>
+          <p class="byline small">A Flask + ML affair · Solved in part, upgraded in flight</p>
+          <p>An ML-powered web app that recommends the best crop to grow from soil and weather inputs. Uses an ensemble of four classifiers (Random Forest, SVM, XGBoost, and Gaussian Naive Bayes) and a majority-vote decision layer, served through a Flask backend. Generates classification reports and visual confusion matrices to compare model performance side-by-side.</p>
+          <p>Upgraded from manual entry to location-aware: pulls real-time temperature, humidity, and rainfall from a weather API using geolocation or a Pincode, with input clamping for safety.</p>
+          <p class="case-tags">
+            <span>Python</span><span>Flask</span><span>Scikit-Learn</span><span>XGBoost</span><span>Pandas</span><span>Joblib</span><span>Matplotlib</span><span>Seaborn</span><span>API</span><span>Geolocation</span>
+          </p>
         </article>
-        <article class="glass project-card reveal">
-          <div class="project-thumb">02</div>
-          <h3>Personal Portfolio</h3>
-          <p>
-            This site — a glassmorphism-styled portfolio built with HTML, CSS,
-            and vanilla JavaScript, featuring scroll-reveal animations and a
-            fully responsive layout.
-          </p>
-          <div class="tags">
-            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+
+        <article class="case-file">
+          <div class="case-header">
+            <span class="case-no">CASE № 02</span>
+            <span class="case-status status-closed">CLOSED · SHIPPED</span>
           </div>
+          <h3 class="article-title">The Newspaper You're Reading</h3>
+          <p class="byline small">A personal portfolio, now in broadsheet</p>
+          <p>This site — a newspaper-styled portfolio built with HTML, CSS, and vanilla JavaScript, featuring scroll-reveal animations and a fully responsive layout. No frameworks. No build step. Just the newsprint, the column rules, and a magnifier.</p>
+          <p class="case-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </p>
         </article>
       </div>
     </section>
 
+    <div class="double-rule container"></div>
+
     <!-- CONTACT -->
-    <section id="contact" class="section">
-      <h2 class="section-title reveal">Get in <span>Touch</span></h2>
+    <section id="contact" class="section container">
+      <header class="section-head">
+        <p class="kicker">PUBLIC NOTICE · CONTACT DESK</p>
+        <h2 class="section-title">GET IN TOUCH</h2>
+        <p class="section-dek">Tips, leads, and friendly telegrams are all read at this desk.</p>
+      </header>
+
       <div class="contact-grid">
-        <div class="glass card reveal">
-          <h3>Let's Talk</h3>
+        <article class="article">
+          <h3 class="article-title">Let's Talk</h3>
           <p>Have a project, an idea, or just want to say hi? Drop a message and I'll get back to you.</p>
           <ul class="contact-list">
-            <li><strong>Email:</strong> abc123@gmail.com</li>
-            <li><strong>Phone/Whatsapp:</strong> 9876543210</li>
+            <li><strong>Email:</strong> <a href="mailto:rudrapradhan2005@gmail.com">rudrapradhan2005@gmail.com</a></li>
+            <li><strong>Phone / WhatsApp:</strong> 8093690202</li>
             <li><strong>Location:</strong> India</li>
           </ul>
-        </div>
-        <form id="contact-form" class="glass card reveal" action="https://api.web3forms.com/submit" method="POST">
+          <div class="stamp small">PRESS CARD ON FILE</div>
+        </article>
+
+        <form id="contact-form" class="article contact-form" action="https://api.web3forms.com/submit" method="POST">
           <input type="hidden" name="access_key" value="your access key" />
           <input type="hidden" name="subject" value="New message from your portfolio" />
           <input type="hidden" name="from_name" value="Portfolio Contact Form" />
           <input type="hidden" name="replyto" value="Your gmail" />
           <input type="checkbox" name="botcheck" class="hidden" style="display:none" />
+          <h3 class="article-title">Send a Telegram</h3>
           <label>
-            <span>Name</span>
+            <span>NAME</span>
             <input type="text" name="name" required />
           </label>
           <label>
-            <span>Email</span>
+            <span>EMAIL</span>
             <input type="email" name="email" required />
           </label>
           <label>
-            <span>Message</span>
+            <span>MESSAGE</span>
             <textarea name="message" rows="4" required></textarea>
           </label>
-          <button type="submit" class="btn btn-primary" id="submit-btn">Send Message</button>
+          <button type="submit" class="btn-send" id="submit-btn">FILE THE MESSAGE</button>
         </form>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <p>© 2026 Rudra Prasad Pradhan · Built with HTML, CSS &amp; JavaScript</p>
+  <footer class="paper-footer">
+    <div class="container">
+      <div class="double-rule"></div>
+      <div class="footer-row">
+        <div class="footer-col">
+          <p class="kicker">THE DEVELOPER DISPATCH</p>
+          <p>Reporting on code, one case at a time.</p>
+        </div>
+        <div class="footer-col socials">
+          <p class="kicker">FOLLOW THE PAPER</p>
+          <a href="https://github.com/rudra-prasad2005" target="_blank" rel="noopener" aria-label="GitHub">GITHUB</a>
+          <a href="https://www.linkedin.com/in/rudra-4b284a295/" target="_blank" rel="noopener" aria-label="LinkedIn">LINKEDIN</a>
+          <a href="https://www.instagram.com/rudra809369/" target="_blank" rel="noopener" aria-label="Instagram">INSTAGRAM</a>
+          <a href="mailto:rudrapradhan2005@gmail.com">EMAIL</a>
+        </div>
+        <div class="footer-col">
+          <p class="kicker">COLOPHON</p>
+          <p>© 2026 Rudra Prasad Pradhan · Set in Playfair Display &amp; IM Fell English. Printed in HTML, CSS &amp; JavaScript.</p>
+        </div>
+      </div>
+      <p class="footer-end">— END OF EDITION —</p>
+    </div>
   </footer>
 
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
